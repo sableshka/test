@@ -1,7 +1,7 @@
 # ESTC OS-les build system
 
 Build system for ESTC OS-less tasks
-
+![noch_voda_mayak_siyanie_74439_1920x1080](https://user-images.githubusercontent.com/47479263/67852464-7fe75080-fb1d-11e9-9220-18d3f83f54ba.jpg)
 ## Prerequisites
 * [arm-none-eabi](https://developer.arm.com/open-source/gnu-toolchain/gnu-rm/downloads) compiler
 * [stlink](https://github.com/texane/stlink) utility
