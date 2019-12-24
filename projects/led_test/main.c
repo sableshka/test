@@ -1,6 +1,7 @@
 #include "main.h"
 
 #define SWITCH_DELAY 100000
+//HSE
 
 int main(void)
 {
