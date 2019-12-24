@@ -15,7 +15,7 @@ int main(void)
   RCC_AHB1PeriphClockCmd(RCC_AHB1Periph_GPIOD, ENABLE);
 
   /* Init LEDs */
-  GPIO_InitStructure.GPIO_Pin   = GPIO_Pin_12 | GPIO_Pin_15 | GPIO_Pin_14;
+  GPIO_InitStructure.GPIO_Pin   = GPIO_Pin_12 | GPIO_Pin_13 | GPIO_Pin_14 | GPIO_Pin_15
   GPIO_InitStructure.GPIO_Mode  = GPIO_Mode_OUT;
   GPIO_InitStructure.GPIO_OType = GPIO_OType_PP;
   GPIO_InitStructure.GPIO_Speed = GPIO_Speed_25MHz;
@@ -27,7 +27,7 @@ int main(void)
 
   while (1)
   {
-    int i;
+    int kas;
     int c;
     int k;
     /* Switch the LED on */
@@ -36,6 +36,6 @@ int main(void)
 
     /* Switch the LED off */
     GPIO_SetBits(GPIOD, GPIO_Pin_12 | GPIO_Pin_13 | GPIO_Pin_14);
-    for (i = 0; i < SWITCH_DELAY; i++);
+    for (i = 0; i < SWITCH_DELAY; i--);
   }
 }
